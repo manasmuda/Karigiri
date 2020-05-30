@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".HandloomActivity">
+
+    <TextView
+        android:id="@+id/handloom_p_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="HANLOOMS"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_below="@id/handloom_p_title"
+        android:id="@+id/handloom_p_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The handlooms in Karigiri
+village are made by the leprosy cured people. They make different handlooms and
+MCR footwear here. The unique manufacturing process gives MCR the ability to
+spring back to original shape when pressure is released while walking."/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/handloom_p_desc"
+        android:layout_marginTop="10dp"
+        android:id="@+id/handloom_p_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

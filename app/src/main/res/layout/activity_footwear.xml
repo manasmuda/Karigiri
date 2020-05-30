@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".FootwearActivity">
+
+    <TextView
+        android:id="@+id/footwear_p_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="FOOTWEAR"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_below="@id/footwear_p_title"
+        android:id="@+id/footwear_p_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Microcellular Rubber Footwear or MCR Footwear used to cure Diabetic Problems, Foot Pain, Arch Pain and Back pain
+Flat Foot causes Serious health problem
+MCR Slippers and Insoles absorb shocks from eternal forces
+MCR Based Arch Insoles prevent the friction
+Arch Support footwear or Insole can prevent the Flat Foot Problems"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/footwear_p_desc"
+        android:layout_marginTop="10dp"
+        android:id="@+id/footwear_p_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

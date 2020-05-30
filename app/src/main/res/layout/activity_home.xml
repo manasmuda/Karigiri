@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:drawableLeft="@drawable/ic_shopping_cart_black_24dp"
+        android:text="CART"
+        android:textSize="28dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="KARIGIRI"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36dp"
+        android:textStyle="bold"/>
+    
+    <RelativeLayout
+        android:layout_below="@id/cart"
+        android:layout_marginTop="10dp"
+        android:id="@+id/handloomLayout"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_card">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/handloom_title"
+            android:text="HANDLOOMS"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/handloom_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/handloom_title"
+            android:text="Handlooms in Kaligiri village are made by the leprosy cured people." />
+
+        <Button
+            android:id="@+id/handloom_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            android:text="VIEW HANDLOOMS"
+            android:layout_below="@id/handloom_desc"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/handloomLayout"
+        android:layout_marginTop="10dp"
+        android:id="@+id/footwearLayout"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_card">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/footwear_title"
+            android:text="FOOTWEAR"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/footwear_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/footwear_title"
+            android:text="Microcellular Rubber Footwear or MCR Footwear used to cure Diabetic Problems, Foot Pain, Arch Pain and Back pain." />
+
+        <Button
+            android:id="@+id/footwear_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            android:text="VIEW FOOTWEAR"
+            android:layout_below="@id/footwear_desc"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/footwearLayout"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="ABOUT"
+                android:textSize="24dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Whereabouts and Overview:
+Among the finest Hospitals in the city, Karigiri Hospital
+(Sih-RLc) in Katpadi, Vellore is known for offering excellent
+patient care.  The clinic is located centrally in Katpadi, a prominent
+locality in the city. It stands close to Near Sevur which not only makes
+ it convenient for people from the vicinity to consult the doctor but
+also for those from other neighbourhoods to seek medical guidance. There
+ is no dearth of public modes of transport to reach the clinic from all
+major areas of the city.
+
+Services Offered:
+Karigiri Hospital (Sih-RLc) in Katpadi, Vellore has a
+well-equipped clinic with all the modern equipment. The clinic has
+separate waiting and consultation areas which allow enough space for
+patients to wait conveniently at the clinic. Being a specialized
+Hospitals, the doctor offers a number of medical services. The clinic is
+ operational between 00:00 - 23:59. Payments can be made via various
+modes like Cash."/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
